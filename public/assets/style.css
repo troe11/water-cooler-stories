@@ -14,11 +14,11 @@ body {
     background-attachment: fixed;
 }
 
-footer {
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background-color: #3e4257;
-  }
+    background-color: #568ee3;
+}
