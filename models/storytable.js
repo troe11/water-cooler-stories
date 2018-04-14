@@ -1,3 +1,5 @@
+import { userInfo } from "os";
+
 module.exports = function (sequelize, DataTypes) {
 
     var StorieTable = sequelize.define("StorieTable", {
@@ -36,9 +38,22 @@ module.exports = function (sequelize, DataTypes) {
         tag_id3: {
             type: DataTypes.INTEGER, 
             defaultValue: 0
-        },
+        }
 
      });
+
+    StorieTable.associate = function (models){
+         models.StorieTable.belongsTo(models.Userinformation, {
+             foreingKey: {
+                 allowNull: false
+             }
+         });
+        models.StorieTable.belongsTo(models.Tags,{
+            foreingKey: {
+                allowNull: false
+            }
+        });
+     }; 
 
     return StorieTable;
 };
