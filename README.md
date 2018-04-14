@@ -32,13 +32,13 @@ You need to create a User within the app for you to write and follow up on our s
 ### The Reservoir Dogs that created this app:
 
 #### -Travis "troe11" Roemhild
--BackEnd Mastermind
+   -BackEnd Mastermind
 
 #### -Jeremy "lexdexic" Andersen
--FrontEnd Pundit
+   -FrontEnd Pundit
 
 #### -Martin "kaktux" Gaxiola
--The Database guy
+   -The Database guy
 
 
 
