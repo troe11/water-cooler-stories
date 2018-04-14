@@ -23,7 +23,7 @@ body {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background-image: url("http://kb4images.com/images/underwater-wallpaper/38254094-underwater-wallpaper.jpg");
+    /* background-image: url("http://kb4images.com/images/underwater-wallpaper/38254094-underwater-wallpaper.jpg"); */
     background-size: cover;
     color: whitesmoke;
 }
