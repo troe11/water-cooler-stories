@@ -15,30 +15,30 @@ way to express frustration within the jobs that we currently (some of this indiv
 You need to create a User within the app for you to write and follow up on our stories. The user will allow you to have a personalized experience according to the information that you provide.
 
 ### Built With:
-
-   •   Node.js
-    o	NPM Packages:
-        	body-parser,
-        	express,
-        	method-override,
-        	mysql,
-        	sequelize,
-        	sequelize-cli
-    •	HTML
-    •	CSS
-    •	MYSQL
-    •	Bootstrap
+   - Node.js
+       - NPM Packages:
+           - body-parser
+           - express
+           - method-override
+           - mysql
+           - sequelize
+           - sequelize-cli 
+       -	HTML
+       -	CSS
+       -	MYSQL
+       -	Bootstrap
+   
 
 ### The Reservoir Dogs that created this app:
 
-#### o	Travis "troe11" Roemhild
-    •	BackEnd Mastermind
+#### -Travis "troe11" Roemhild
+-BackEnd Mastermind
 
-#### o	Jeremy "lexdexic" Andersen
-    •	FrontEnd Pundit
+#### -Jeremy "lexdexic" Andersen
+-FrontEnd Pundit
 
-#### o	Martin "kaktux" Gaxiola
-    •	The Database guy
+#### -Martin "kaktux" Gaxiola
+-The Database guy
 
 
 
