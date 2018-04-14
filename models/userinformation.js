@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
 
-    var userinformation = sequelize.define("userinformation", {
+    var Userinformation = sequelize.define("Userinformation", {
         user_id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -37,9 +37,10 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
         },
 
+    });
 
         
-        return userinformation;
+        return Userinformation;
     };
 
 

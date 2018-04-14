@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
 
-    var storieTable = sequelize.define("storieTable", {
+    var StorieTable = sequelize.define("StorieTable", {
         story_id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -36,7 +36,9 @@ module.exports = function (sequelize, DataTypes) {
         tag_id3: {
             type: DataTypes.INTEGER, 
             defaultValue: 0
-        }
+        },
 
-        return storieTable;
-    };
+     });
+
+    return StorieTable;
+};

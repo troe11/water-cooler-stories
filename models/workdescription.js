@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
     
-    var workDescription = sequelize.define("workDescription", {
+    var WorkDescription = sequelize.define("WorkDescription", {
         works_id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -11,9 +11,10 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
 
-    };
+        },
+    });
 
-    return workDescription;
+    return WorkDescription;
     };
 
 
