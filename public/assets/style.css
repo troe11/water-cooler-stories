@@ -69,8 +69,11 @@ body {
   }
 
   #userStory {
-    border: 10px solid grey;
+      border: 10px solid grey;
       width:100%;
       height: 200px;
   }
 
+.storyDiv {
+  border-bottom: 5px solid #5B86E5;
+}

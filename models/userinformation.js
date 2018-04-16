@@ -41,7 +41,7 @@ module.exports = function (sequelize, DataTypes) {
 
     Userinformation.associate = function (models) {
         models.StorieTable.belongsTo(models.WorkDescription, {
-            foreingKey: {
+            foriegnKey: {
                 allowNull: false
             }
         });

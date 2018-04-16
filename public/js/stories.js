@@ -6,39 +6,48 @@ $(document).ready(function(){
         var tagDiv = $("<div>");
         for(let i = 0;i<tags.length;i++){
             var tag = $("<input>").attr("type","checkbox")
-            .attr("id",tags[i]);
+            .attr("id",i);
             var label = $("<label>").attr("for",tags[i]).text(tags[i]);
             tagDiv.append(tag,label);
         }
         $("#tagArr").append(tagDiv);
     }
 
-    function getStories(){
-        $.get('api/stories',function(data){
-            
-        })
-    }
+    
 
     addTags();    
 
     $("#submit-btn").on("click", function(){
-        var job = $("#job").val();
+        var id = $(".custom-select").find('option:selected').attr('id');
+        console.log(id)
         var tagsArr=[]
         var storie = $('#userStory').val().trim();
+        
+        var checked = 0;
         $('input[type=checkbox]').each(function () {
             if(this.checked){
+                checked++;
                 tagsArr.push(this.id);
             }
+            
         });
-        var newStorie = {
-            user_id:0,
-            vent_story:storie,
-            tag_id1:tagsArr[0],
-            tag_id2:tagsArr[1],
-            tag_id3:tagsArr[2]
+        checkTags();
+        
+        function checkTags(){
+            if (checked>0 && checked <= 3){
+                var newStorie = {
+                    // WorkDescriptionWorksId:id,
+                    user_id:0,
+                    vent_story:storie,
+                    tag_id1:tagsArr[0],
+                    tag_id2:tagsArr[1],
+                    tag_id3:tagsArr[2]
+                };
+                $.post("/api/stories", newStorie)
+                    .then(console.log(newStorie));
+            }else{alert('Please select a tag for your story')};
         }
-        $.post("/api/stories", newStorie)
-            .then(getStories);
+        
             //need to write the route to getStories
   
     })
