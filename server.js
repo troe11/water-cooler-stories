@@ -3,6 +3,7 @@ var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var connection = require('./config/connection.js');
 var app = express();
+var sequelize = require("sequelize");
 
 var PORT = 3000;
 // Serve static content for the app from the "public" directory in the application directory.
@@ -18,7 +19,6 @@ var db = require('./models')
 require("./routes/storie-routes.js")(app);
 require("./routes/html-routes.js")(app);
 // require("./routes/user-routes.js")(app);
-
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
