@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(app){
     var tags = ["funny","sad","infuriating","touching","inspirational","motivational",
     "scary","depressing","crazy","i &$*@&# up"];
 
@@ -44,7 +44,11 @@ $(document).ready(function(){
                     tag_id3:tagsArr[2]
                 };
                 $.post("/api/stories", newStorie)
-                    .then(console.log(newStorie));
+                    .then(function(){
+                        alert("Thanks for sharing!");
+                        document.location.href="/homepage";
+                    }
+                    );
             }else{alert('Please select a tag for your story')};
         }
         
