@@ -37,13 +37,11 @@ module.exports = function (sequelize, DataTypes) {
         tag_id3: {
             type: DataTypes.INTEGER, 
             defaultValue: 0
+        },
+        work_id1: {
+            type: DataTypes.INTEGER,
+            allowNull: false
         }
-        // },
-
-        // WorkDescriptionWorksId: {
-        //     type: DataTypes.INTEGER,
-        //     allowNull: false
-        // }
 
      });
 
@@ -58,6 +56,14 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: false
             }
         });
+
+        
+            models.StorieTable.belongsTo(models.WorkDescription, {
+                foriegnKey: {
+                    allowNull: false
+                }
+            });
+
      }; 
 
     return StorieTable;

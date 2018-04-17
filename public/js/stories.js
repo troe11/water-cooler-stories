@@ -36,7 +36,7 @@ $(document).ready(function(app){
         function checkTags(){
             if (checked>0 && checked <= 3){
                 var newStorie = {
-                    // WorkDescriptionWorksId:id,
+                    work_id1:id,
                     user_id:0,
                     vent_story:storie,
                     tag_id1:tagsArr[0],
