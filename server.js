@@ -3,7 +3,6 @@ var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var connection = require('./config/connection.js');
 var app = express();
-var sequelize = require("sequelize");
 
 var PORT = process.env.PORT || 3000;
 // Serve static content for the app from the "public" directory in the application directory.
