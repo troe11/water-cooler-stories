@@ -95,3 +95,9 @@ body {
 #jobTitleHeading {
     color:  #5B86E5;
 }
+
+.signupform {
+    background: white;
+    padding:5%;
+    margin-top: 10%;
+}
