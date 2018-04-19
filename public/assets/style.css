@@ -2,9 +2,6 @@ body {
     background: #36D1DC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
 }
 
 html {
@@ -21,9 +18,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height: 60px;
-    /* background-image: url("http://kb4images.com/images/underwater-wallpaper/38254094-underwater-wallpaper.jpg"); */
     background-size: cover;
     color: whitesmoke;
 }
@@ -35,30 +30,22 @@ body {
     background: white;
   }
   
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
   .leftcolumn { 
     float: left;
     width: 75%;
   }
   
-  /* Right column */
   .rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
   }
-  
-
-  
-  /* Add a card effect for articles */
-  .card {
+    .card {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
   }
   
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
@@ -67,7 +54,7 @@ body {
 
   .jumbotron{
       margin-top: 20px;
-      background-image: url("http://kb4images.com/images/underwater-wallpaper/38254094-underwater-wallpaper.jpg");
+      /* background-image: url("http://kb4images.com/images/underwater-wallpaper/38254094-underwater-wallpaper.jpg"); */
       background-size: cover;
       color: whitesmoke;
   }
@@ -80,4 +67,31 @@ body {
 
 .storyDiv {
   border-bottom: 5px solid #5B86E5;
+}
+
+.jobId {
+    border: 2px solid #5B86E5;
+    border-radius: 5px;
+    background: #36D1DC;
+    padding:10px;
+    margin: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+#pickJobDisplay {
+    border: 8px solid #5B86E5;
+    border-radius: 5px;
+    background: white;
+    margin:5%;
+    text-align: center;
+}
+
+.panel-heading{
+    text-align: center;
+    font-size: 24px;
+}
+
+#jobTitleHeading {
+    color:  #5B86E5;
 }
