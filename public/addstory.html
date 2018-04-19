@@ -66,15 +66,28 @@
 	<!-- <header><h1>Add your story</h1></header> -->
 
 	<div class="row">
-			<div class="leftcolumn">
-			<div class="card">
-				<h2>TITLE HEADING</h2>
-				<h5>Title description 
-				<br>random, date</h5>
-				<p>Some text..Lorem ipsizzle break it down sit i'm in the shizzle, ghetto adipiscing elit. Nullam phat velizzle, break it down volutpizzle, suscipit rizzle, fo shizzle vizzle, shit. Pellentesque phat daahng dawg. Shiznit sizzle. Shit izzle shiznit dapibus turpis tempizzle tempizzle. Maurizzle pellentesque nibh izzle turpizzle. Vestibulum in tortor. Pellentesque its fo rizzle rhoncizzle fo shizzle. In rizzle its fo rizzle yo mamma dictumst. Pimpin' dapibizzle. Curabitizzle go to hizzle urna, pretizzle eu, mattizzle ac, shut the shizzle up fo, nunc. Gangster suscipizzle. Check it out sempizzle tellivizzle sure purizzle.Etizzle funky fresh magna shizzlin dizzle augue fo shizzle accumsizzle. Aenizzle in crazy. Vivamus maurizzle dolizzle, pimpin' vitae, facilisizzle izzle, gangsta hizzle, uhuh ... </p>
+
+			<div class="form-group">
+				<select class="custom-select" id="job">
+					<option value="1" id="1">Retail</option>
+					<option value="2" id="2">Food Service/Hospitality</option>
+					<option value="3" id="3">Education</option>
+					<option value="4" id="4">IT/Computers</option>
+					<option value="5" id="5">Construction and Real Estate</option>
+					<option value="6" id="6">Health Care</option>
+					<option value="7" id="7">Transportation/</option>
+					<option value="8" id="8">Self-Employed</option>
+				</select>
+				<label for="story">Keep it under 3000 characters!</label>
+				<input type="text" id="userStory">
 			</div>
+			<div class="text-center">
+				<button type="submit" class="btn btn-primary btn-md" id="submit-btn"><span class="glyphicon glyphicon-search"></span> Tell your story!</button>
+			</div>
+			<p>Please select at least 1 tag (but not more than 3)</p>
+			<fieldset id="tagArr">
 
-
+			</fieldset>
 
 		</div>
 	</div>
