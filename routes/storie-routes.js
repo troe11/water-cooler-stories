@@ -14,12 +14,13 @@ module.exports = function(app) {
     });
 
     app.get("/api/stories/:category", function(req, res) {
+        console.log(req.params.category);
         // Here we add an "include" property to our options in our findOne query
         // We set the value to an array of the models we want to include in a left outer join
         // In this case, just db.Post
         db.StorieTable.findAll({
           where: {
-            WorkDescriptionWorksId: req.params.id
+            work_id1: req.params.category
           } 
         }).then(function(dbAuthor) {
           res.json(dbAuthor);
