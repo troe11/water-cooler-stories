@@ -1,4 +1,3 @@
-import { userInfo } from "os";
 
 module.exports = function (sequelize, DataTypes) {
 
@@ -15,7 +14,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         // verify how to put the 3000 character spec in here.
         vent_story:{    
-            type:DataTypes.Varchar,
+            type:DataTypes.STRING,
             allowNull:false
         },
         hot_count:{
@@ -38,6 +37,10 @@ module.exports = function (sequelize, DataTypes) {
         tag_id3: {
             type: DataTypes.INTEGER, 
             defaultValue: 0
+        },
+        work_id1: {
+            type: DataTypes.INTEGER,
+            allowNull: false
         }
 
      });
@@ -49,10 +52,18 @@ module.exports = function (sequelize, DataTypes) {
              }
          });
         models.StorieTable.belongsTo(models.Tags,{
-            foreingKey: {
+            foriegnKey: {
                 allowNull: false
             }
         });
+
+        
+            models.StorieTable.belongsTo(models.WorkDescription, {
+                foriegnKey: {
+                    allowNull: false
+                }
+            });
+
      }; 
 
     return StorieTable;

@@ -25,27 +25,12 @@ module.exports = function (sequelize, DataTypes) {
         password: {
             type: DataTypes.STRING,
             allowNull: false
-        },
-        work_id1: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        work_id2: {
-            type: DataTypes.INTEGER,
-        },
-        work_id3: {
-            type: DataTypes.INTEGER,
-        },
+        }
 
     });
 
-    Userinformation.associate = function (models) {
-        models.StorieTable.belongsTo(models.WorkDescription, {
-            foreingKey: {
-                allowNull: false
-            }
-        });
-    }; 
+    
+    
 
         
         return Userinformation;

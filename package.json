@@ -22,7 +22,11 @@
     "express": "^4.16.3",
     "method-override": "^2.3.10",
     "mysql": "^2.15.0",
+<<<<<<< HEAD
     "react": "^16.3.1",
+=======
+    "mysql2": "^1.5.3",
+>>>>>>> 22df93be5faa052e759bd7cb9afe128fcd54df41
     "sequelize": "^4.37.6",
     "sequelize-cli": "^4.0.0"
   }
