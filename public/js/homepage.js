@@ -32,6 +32,10 @@ $(document).ready(function(){
                 $(".panel-body").append(x);
             };
         })
+        
     });
+    $("#tellBtn").on('click', function(){
+        document.location.href="/add";
+    })
 });
 
