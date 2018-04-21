@@ -50,9 +50,14 @@ $(document).ready(function(app){
                     }
                     );
             }else{alert('Please select a tag for your story')};
-        }
-        
-            //need to write the route to getStories
-  
+        }  
+    })
+
+    $("#storyBtn").on('click', function(){
+        document.location.href="/homepage";
+    });
+
+    $("#tellBtn").on('click', function(){
+        document.location.href="/add";
     })
 })

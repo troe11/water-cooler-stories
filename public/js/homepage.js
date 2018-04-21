@@ -11,12 +11,23 @@ $(document).ready(function(){
 
     $(".jobId").on('click', function () {
         $(".panel-body").empty();
+        var tags = [
+            "Funny",
+            "Sad",
+            "Infuriating",
+            "Touching",
+            "Inspirational",
+            "Motivational",
+            "Scary",
+            "Depressing",
+            "Crazy",
+            "IFUW"]
         var category = $(this).attr('id');
         $(".panel-heading").text($(this).text());
         $.get('api/stories/' + category, function(data){
             for(let i = 0; i<data.length;i++){
-                var x = $('<div>').text(i+1).addClass("storyDiv");
-                var y = $('<br><p>').text(data[i].vent_story)
+                var x = $('<div><br>').text("Tags: "+tags[data[i].tag_id1]+", "+tags[data[i].tag_id2]+", "+tags[data[i].tag_id1]).addClass("storyDiv");
+                var y = $('<h3>').text(data[i].vent_story).addClass("storyID");
                 x.append(y)
                 $(".panel-body").append(x);
             };
