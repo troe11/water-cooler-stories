@@ -53,7 +53,7 @@ $(document).ready(function(app){
         }  
     })
 
-    $("#storyBtn").on('click', function(){
+    $("#diveBtn").on('click', function(){
         document.location.href="/homepage";
     });
 
