@@ -26,4 +26,16 @@ module.exports = function(app) {
           res.json(dbAuthor);
         });
       });
+
+      app.put("/api/stories", function(req, res) {
+        db.StorieTable.update(req.body,
+          {
+            where: {
+              story_id: req.body.story_id
+            }
+          })
+        .then(function(dbPost) {
+          res.json(dbPost);
+        });
+      });
 }

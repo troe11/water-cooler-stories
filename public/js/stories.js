@@ -59,5 +59,9 @@ $(document).ready(function(app){
 
     $("#tellBtn").on('click', function(){
         document.location.href="/add";
-    })
+    });
+
+    $("#aboutUs").on('click', function(){
+        document.location.href="/about";
+    });
 })
