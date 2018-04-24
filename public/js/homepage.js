@@ -28,14 +28,36 @@ $(document).ready(function(){
             for(let i = 0; i<data.length;i++){
                 var x = $('<div><br>').text("Tags: "+tags[data[i].tag_id1]+", "+tags[data[i].tag_id2]+", "+tags[data[i].tag_id1]).addClass("storyDiv");
                 var y = $('<h3>').text(data[i].vent_story).addClass("storyID");
-                x.append(y)
+
+                var hot = $('<img>').attr('src','../assets/hotTab.png')
+                .attr("data",data[i].story_id)
+                .attr("id","hotCount");
+
+                var hcRow = $("<div>").addClass("row").attr('id','hcRow');
+
+                var hotCount = $("<p>").text(data[i].hot_count+"°");
+
+                var cold = $('<img>').attr('src','../assets/coldTab.png')
+                .attr("data",data[i].story_id)
+                .attr("id","coldCount");
+
+                var coldCount = $("<p>").text(data[i].cold_count+"°");
+
+                hcRow.append(hot,hotCount,cold,coldCount);
+                x.append(y,hcRow);
+
                 $(".panel-body").append(x);
             };
         })
         
     });
+
     $("#tellBtn").on('click', function(){
         document.location.href="/add";
-    })
+    });
+
+    $("#coldCount").on("click",function(){
+
+    });
 });
 
